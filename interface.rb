@@ -24,7 +24,7 @@ until template.winner?
     end
   end
 end
-if template.winner_name==1
+if template.winner_name==true
   puts template.structure
   puts "Congratulation Player 1 win"
 else
