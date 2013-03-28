@@ -7,8 +7,8 @@ gets
 
 template=Template.new
 players=Player.new("Player 1"), Player.new("Player 2")
-  until template.winner?
-    players.each do |player|
+until template.winner?
+  players.each do |player|
     puts "#{player.name} you turn"
     puts template.structure
     choice=player.choice
@@ -18,10 +18,10 @@ players=Player.new("Player 1"), Player.new("Player 2")
       choice=player.choice
     end
     if player.name=="Player 1"
-    template.array[choice-1]='X'
+      template.array[choice-1]='X'
     else
-    template.array[choice-1]='O'
-  end
+      template.array[choice-1]='O'
+    end
   end
 end
 if template.winner_name==1
